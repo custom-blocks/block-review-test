@@ -1,6 +1,26 @@
 {
   "category": "testing",
+  "packages": [
+    {
+      "file": "package.json",
+      "dependencies": { "clsx": "^2.1.0" }
+    }
+  ],
   "addedFiles": [
     { "source": "review-test.ts", "target": "src/lib/review-test.ts" }
+  ],
+  "replacements": [
+    {
+      "targetFile": "src/app/layout.tsx",
+      "placeholder": "// kelor:imports",
+      "value": "import { reviewLabel } from \"@/lib/review-test\";",
+      "mode": "append"
+    },
+    {
+      "targetFile": "src/app/layout.tsx",
+      "placeholder": "{/* kelor:providers */}",
+      "value": "<span hidden className={reviewLabel(false)} />",
+      "mode": "append"
+    }
   ]
 }
