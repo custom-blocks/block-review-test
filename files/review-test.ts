@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-export const reviewTest = "v3";
+export const reviewTest = "v4";
 
 export function reviewLabel(active: boolean) {
   return clsx("review", active && "review-active");
