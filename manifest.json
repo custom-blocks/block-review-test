@@ -3,7 +3,7 @@
   "packages": [
     {
       "file": "package.json",
-      "dependencies": { "clsx": "^2.1.0" }
+      "dependencies": { "clsx": "^2.1.1" }
     }
   ],
   "addedFiles": [
@@ -19,7 +19,7 @@
     {
       "targetFile": "src/app/layout.tsx",
       "placeholder": "{/* kelor:providers */}",
-      "value": "<span hidden className={reviewLabel(false)} />",
+      "value": "<span hidden className={reviewLabel(true)} />",
       "mode": "append"
     }
   ]
